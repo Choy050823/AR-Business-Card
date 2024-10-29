@@ -1,0 +1,131 @@
+[debug] [2024-10-29T19:21:54.949Z] ----------------------------------------------------------------------
+[debug] [2024-10-29T19:21:54.951Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\choym\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init --debug
+[debug] [2024-10-29T19:21:54.951Z] CLI Version:   13.23.0
+[debug] [2024-10-29T19:21:54.951Z] Platform:      win32
+[debug] [2024-10-29T19:21:54.951Z] Node Version:  v20.10.0
+[debug] [2024-10-29T19:21:54.951Z] Time:          Wed Oct 30 2024 03:21:54 GMT+0800 (Singapore Standard Time)
+[debug] [2024-10-29T19:21:54.951Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-29T19:21:54.954Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-29T19:21:54.955Z] > authorizing via signed-in user (choymh23@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Doccuments (PC)\Technical Projects\AR Business Card
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-10-29T19:22:15.595Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:15.596Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:15.597Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-10-29T19:22:15.597Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"choyminhan-ar-card","name":"choyminhan-ar-card"}
+[debug] [2024-10-29T19:22:17.540Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-10-29T19:22:17.540Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5811571733693487162"}
+[debug] [2024-10-29T19:22:17.541Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:17.541Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:17.541Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 [none]
+[debug] [2024-10-29T19:22:18.804Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 200
+[debug] [2024-10-29T19:22:18.805Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 {"name":"operations/cp.5811571733693487162"}
+[debug] [2024-10-29T19:22:19.315Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-10-29T19:22:19.315Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:19.316Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:19.316Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 [none]
+[debug] [2024-10-29T19:22:19.824Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 200
+[debug] [2024-10-29T19:22:19.825Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 {"name":"operations/cp.5811571733693487162","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-10-29T19:22:20.827Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-10-29T19:22:20.827Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:20.828Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:20.828Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 [none]
+[debug] [2024-10-29T19:22:21.343Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 200
+[debug] [2024-10-29T19:22:21.344Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5811571733693487162 {"name":"operations/cp.5811571733693487162","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"784714209211","projectId":"choyminhan-ar-card","lifecycleState":"ACTIVE","name":"choyminhan-ar-card","createTime":"2024-10-29T19:22:24.281602Z"}}
+[debug] [2024-10-29T19:22:21.347Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:21.347Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:21.347Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/choyminhan-ar-card:addFirebase [none]
+[debug] [2024-10-29T19:22:25.172Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/choyminhan-ar-card:addFirebase 200
+[debug] [2024-10-29T19:22:25.172Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/choyminhan-ar-card:addFirebase {"name":"operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi"}
+[debug] [2024-10-29T19:22:25.173Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:25.174Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:25.174Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi [none]
+[debug] [2024-10-29T19:22:26.469Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi 200
+[debug] [2024-10-29T19:22:26.470Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi {"name":"operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi"}
+[debug] [2024-10-29T19:22:26.977Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-10-29T19:22:26.978Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:26.979Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:26.979Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi [none]
+[debug] [2024-10-29T19:22:27.908Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi 200
+[debug] [2024-10-29T19:22:27.909Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi {"name":"operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi"}
+[debug] [2024-10-29T19:22:28.914Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-10-29T19:22:28.914Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:28.914Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:28.915Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi [none]
+[debug] [2024-10-29T19:22:29.915Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi 200
+[debug] [2024-10-29T19:22:29.915Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi {"name":"operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi"}
+[debug] [2024-10-29T19:22:31.928Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-10-29T19:22:31.929Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:31.929Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:31.930Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi [none]
+[debug] [2024-10-29T19:22:32.818Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi 200
+[debug] [2024-10-29T19:22:32.819Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi {"name":"operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi"}
+[debug] [2024-10-29T19:22:36.828Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-10-29T19:22:36.829Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:36.829Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:36.829Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi [none]
+[debug] [2024-10-29T19:22:37.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi 200
+[debug] [2024-10-29T19:22:37.810Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi {"name":"operations/workflows/OGY1NTg3NWMtODhjOS00ZTdkLTllNzMtNTUwOWU1YTdiZDFi","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"choyminhan-ar-card","projectNumber":"784714209211","displayName":"choyminhan-ar-card","name":"projects/choyminhan-ar-card","resources":{"hostingSite":"choyminhan-ar-card"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: choyminhan-ar-card
+[info]    - Project Name: choyminhan-ar-card
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/choyminhan-ar-card/overview
+[info] i  Using project choyminhan-ar-card (choyminhan-ar-card) 
+[info] 
+=== Hosting Setup
+[debug] [2024-10-29T19:22:37.815Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:37.815Z] Checked if tokens are valid: true, expires at: 1730233200929
+[debug] [2024-10-29T19:22:37.815Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/choyminhan-ar-card [none]
+[debug] [2024-10-29T19:22:38.700Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/choyminhan-ar-card 200
+[debug] [2024-10-29T19:22:38.700Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/choyminhan-ar-card {"projectId":"choyminhan-ar-card","projectNumber":"784714209211","displayName":"choyminhan-ar-card","name":"projects/choyminhan-ar-card","resources":{"hostingSite":"choyminhan-ar-card"},"state":"ACTIVE","etag":"1_919e7dd7-03ea-4ee3-8219-7e2b403911c9"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote ./404.html 
+[debug] [2024-10-29T19:23:38.389Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-10-29T19:23:38.417Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-10-29T19:23:38.417Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.1","browserURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.memory.js"}}
+[info] +  Wrote ./index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming D:\Doccuments (PC)\Technical Projects\AR Business Card is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=88386152&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-10-29T19:23:58.545Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-10-29T19:23:58.545Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-10-29T19:23:58.879Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-10-29T19:23:58.879Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-10-29T19:23:58.882Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-10-29T19:23:59.237Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-10-29T19:23:59.237Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Choy050823","id":60000834,"node_id":"MDQ6VXNlcjYwMDAwODM0","avatar_url":"https://avatars.githubusercontent.com/u/60000834?v=4","gravatar_id":"","url":"https://api.github.com/users/Choy050823","html_url":"https://github.com/Choy050823","followers_url":"https://api.github.com/users/Choy050823/followers","following_url":"https://api.github.com/users/Choy050823/following{/other_user}","gists_url":"https://api.github.com/users/Choy050823/gists{/gist_id}","starred_url":"https://api.github.com/users/Choy050823/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Choy050823/subscriptions","organizations_url":"https://api.github.com/users/Choy050823/orgs","repos_url":"https://api.github.com/users/Choy050823/repos","events_url":"https://api.github.com/users/Choy050823/events{/privacy}","received_events_url":"https://api.github.com/users/Choy050823/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"Choy Min Han","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":4,"public_gists":0,"followers":1,"following":0,"created_at":"2020-01-17T11:27:59Z","updated_at":"2024-10-25T12:08:08Z","private_gists":0,"total_private_repos":6,"owned_private_repos":6,"disk_usage":25180,"collaborators":3,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Choy050823 
+[info] 
