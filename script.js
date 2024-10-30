@@ -31,17 +31,27 @@ arToolkitContext.init(() =>
   camera.projectionMatrix.copy(arToolkitContext.getProjectionMatrix())
 );
 
+// renderer.setSize(window.innerWidth, window.innerHeight);
+// renderer.setPixelRatio(window.devicePixelRatio);
+// arToolkitSource.onResize();
+// arToolkitSource.copyElementSizeTo(renderer.domElement);
+// if (arToolkitContext.arController !== null) {
+//   arToolkitSource.copyElementSizeTo(arToolkitContext.arController.canvas);
+// }
+
 // Resize handler
 function onResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(window.devicePixelRatio);
-  arToolkitSource.onResize();
+  arToolkitSource.onResizeElement();
   arToolkitSource.copyElementSizeTo(renderer.domElement);
   if (arToolkitContext.arController !== null) {
     arToolkitSource.copyElementSizeTo(arToolkitContext.arController.canvas);
   }
+  console.log("Resized");
 }
-window.addEventListener("resize", onResize);
+onResize();
+// window.addEventListener("resize", onResize);
 
 // Marker Controls
 const markerRoot = new THREE.Group();
@@ -113,8 +123,8 @@ const introBoard = new THREE.Mesh(
   introMaterial
 );
 
-introBoard.position.set(0, 2.5, -2); // Position behind models
-introBoard.scale.set(2, 2.5, 2);
+introBoard.position.set(0, 2.5, -2.5); // Position behind models
+introBoard.scale.set(2, 3, 2);
 markerRoot.add(introBoard);
 
 // Load models
